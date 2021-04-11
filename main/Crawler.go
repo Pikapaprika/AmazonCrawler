@@ -96,6 +96,7 @@ func handleDiff(contentB *[]byte) {
 	content := string(*contentB)
 	if strings.Contains(content, addToCart) {
 		fmt.Println("Contains button with id:", addToCart)
+		sendMail("Still doing work", "I'm still active")
 	}
 	if strings.Contains(content, buyNow) {
 		sendMail("ALERT: AVAILABLE", buyNow + " seems to be active")
